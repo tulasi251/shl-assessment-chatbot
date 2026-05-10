@@ -13,7 +13,11 @@ with open("catalog.json", "r", encoding="utf-8") as f:
 class ChatRequest(BaseModel):
     messages: list
 
-
+@app.get("/")
+def home():
+    return {
+        "message": "SHL Assessment Chatbot API is running"
+    }
 @app.get("/health")
 def health():
     return {"status": "ok"}

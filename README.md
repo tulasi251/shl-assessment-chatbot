@@ -96,14 +96,21 @@ Example response:
 
 # Deployment
 
-Live API:
+## Health Endpoint
 
-https://shl-assessment-chatbot.onrender.com
+https://shl-assessment-chatbot.onrender.com/health
 
-Swagger Docs:
+Returns:
+
+```json
+{"status":"ok"}
+```
+
+---
+
+## Swagger API Documentation
 
 https://shl-assessment-chatbot.onrender.com/docs
-
 ---
 
 # How It Works
